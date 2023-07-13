@@ -173,7 +173,7 @@ section{
 }
 
 .home-btns button:hover{
-    box-shadow: 7px 7px 7px 1px rgb(101, 99, 99)
+   box-shadow: 7px 7px 7px 1px rgb(101, 99, 99)
 }
 
 #get-in-touch:hover{
@@ -182,15 +182,7 @@ section{
     background-color:  var(--darkblue);
 }
 
-.round-get-in-touch {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    color: white !important;
-    background-color: var(--darkblue) !important;
-    padding: 15px !important;
-    border-radius: 50% !important;
-}
+
 
 #resume-download {
     border: none;
