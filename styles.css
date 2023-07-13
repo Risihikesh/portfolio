@@ -27,7 +27,7 @@ body {
     width: 100vw !important;
     overflow-x: hidden;
     overflow-anchor: none;
-    /* background-color: black; */
+    background-color: black;
 }
 
 .main {
@@ -121,7 +121,7 @@ section{
 
 .details{
     z-index: 1;
-    margin-left: 2px;
+    margin-left: 40px;
     color: whitesmoke;
     max-width: 45vw;
 }
@@ -153,8 +153,8 @@ section{
 .about-me {
     text-align: justify;
     padding-right: 30px ;
-    margin: 10px 0 px 30px 0px;
-    font-size: 1.25rem;
+    margin: 10px 0px 30px 0px;
+    font-size: 1.35rem;
     font-family: 'Dancing Script', cursive;
 }
 
@@ -166,14 +166,14 @@ section{
 
 .home-btns button{
     padding: 15px 30px;
-    margin: right 20px;
+    margin-right: 30px;
     border-radius: 8px;
     font-size: 1rem;
     transition: all 0.25s ease-in-out;
 }
 
 .home-btns button:hover{
-    border: 1.8px solid var(--darkblue);
+    box-shadow: 7px 7px 7px 1px rgb(101, 99, 99)
 }
 
 #get-in-touch:hover{
@@ -229,6 +229,7 @@ section{
 
 #projects{
     background-color: black;
+    position: relative;
 }
 
 #projects .section-main-display {
@@ -301,4 +302,41 @@ section{
     color: var(--projects);
 }
 
+
+/*** skill */
+
+#skills{
+    position: relative;
+  
+}
+
+#skills .section-main-display {
+    background-image: linear-gradient(to right, var(--skillsl), var(--skills));
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    width: 1000px;
+    height: 560px;
+}
+
+.sk {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px auto;
+    color: white;
+    font-size: 1.35rem;
+}
+
+
+
+#skills .name {
+    color: white;
+    margin: 0px 20px;
+    text-shadow: 0px 0px 30px var(--skills);
+}
+
+#skills .name:hover {
+    color: var(--skills);
+}
 
