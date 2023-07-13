@@ -9,8 +9,6 @@
     --projectsl: #592b63c2;
     --skills: #e94b3c;
     --skillsl: #e94b3cc2;
-    --experiecne: #34495e;
-    --experiecnel: #34495ec2;
     --education: teal;
     --educationl: #4E0C0Ec2;
     --myinterests: #f53b57;
@@ -29,7 +27,7 @@ body {
     width: 100vw !important;
     overflow-x: hidden;
     overflow-anchor: none;
-    background-color: black;
+    /* background-color: black; */
 }
 
 .main {
