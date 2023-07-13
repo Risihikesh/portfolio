@@ -1,4 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/* colors for body sections defined here */
+:root {
+    --dark: #161515;
+    --darkblue: #2030E0;
+    --lightblue: #686de0;
+    --projects: #592b63;
+    --projectsl: #592b63c2;
+    --skills: #e94b3c;
+    --skillsl: #e94b3cc2;
+    --experiecne: #34495e;
+    --experiecnel: #34495ec2;
+    --education: teal;
+    --educationl: #4E0C0Ec2;
+    --myinterests: #f53b57;
+    --myinterestsl: #f53b57c2;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    padding: 0px;
+    margin: 0;
+    height: 100vh;
+    width: 100vw !important;
+    overflow-x: hidden;
+    overflow-anchor: none;
+    background-color: black;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+}
+
+#background {
+    /* z-index: -1; */
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    /* box-shadow: 5px 0px 50px 5px black inset; */
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+section{
+    box-sizing: border-box;
+    margin: 20px 0px;
+    padding: 20px;
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
 
+.nav-btns{
+    z-index: 1;
+    background:none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: red;
+}
+
+/**Navigation menu***/
+#navigation{
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background-color: #111972e7;
+    position: absolute;
+    transform: translateY(-150%);
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navigation ul{
+    list-style: none;
+    text-align: center;
+}
+
+#navigation ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 5rem;
+    color: whitesmoke;
+    transition: all 03.s ease-in-out;
+    padding: 0px 30px;
+
+}
+#navigation ul li a:hover{
+    font-size: 3.9rem;
+    text-shadow: 0px 0px 80px wheat;
+}
+
+#remove-nav{
+    color: white;
+    right: 30px;
+}
+
+
+
+/* home Section */
+#home{
+    height: 100vh;
+    justify-content: flex-start;
+    background-color: rgb(0, 0, 0);
+}
+
+.details{
+    z-index: 1;
+    margin-left: 2px;
+    color: whitesmoke;
+    max-width: 45vw;
+}
+
+.name{
+    font-size: 6rem;
+    font-weight: 900;
+    color: whitesmoke;
+    transition: all 0.3s ease-in;
+    line-height: 100px;
+    user-select: none;
+    font-family: space Mono, monospace;
+}
+
+.name:hover{
+    color: #c085cb;
+    text-shadow: 0px 0px 30px #ce21ec;
+}
+
+.person {
+    position: absolute;
+    top: 50%;
+    right: -120px;
+    transform: translateY(-60%);
+    width: 1000px;
+    height: 560px;
+}
+
+.about-me {
+    text-align: justify;
+    padding-right: 30px ;
+    margin: 10px 0 px 30px 0px;
+    font-size: 1.25rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.home-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-btns button{
+    padding: 15px 30px;
+    margin: right 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.25s ease-in-out;
+}
+
+.home-btns button:hover{
+    border: 1.8px solid var(--darkblue);
+}
+
+#get-in-touch:hover{
+    color: white;
+    border: none;
+    background-color:  var(--darkblue);
+}
+
+.round-get-in-touch {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white !important;
+    background-color: var(--darkblue) !important;
+    padding: 15px !important;
+    border-radius: 50% !important;
+}
+
+#resume-download {
+    border: none;
+    background: var(--darkblue);
+}
+
+#resume-download a {
+    text-decoration: none;
+    color: white;
+}
+
+#linkedin,
+#github {
+    justify-content: center;
+    padding: 5px 10px;
+    font-size: 2.5rem;
+}
+
+.section-main-display {
+    /* width: 1000px; */
+    width: 55vw;
+    max-width: 1000px;
+    height: 560px;
+    height: max-content;
+    border-radius: 15px;
+    /* border: 0.2px solid black; */
+}
+
+.section-main-display h1 {
+    font-size: 2.5rem;
+    text-align: left;
+    /* border-bottom: 2px solid black; */
+    margin: 10px 20px;
+    /* text-shadow: 2px 2px 10px rgb(112, 110, 110); */
+}
+
+#projects{
+    background-color: black;
+}
+
+#projects .section-main-display {
+    background-image: repeating-linear-gradient(to right, var(--projects), var(--projectsl));
+    border: none;
+    padding: 20px;
+    transform-style: preserve-3d;
+    perspective: 10000px;
+}
+
+
+
+
+.mockups {
+    padding-left: 20px;
+    max-height: 460px;
+    padding-bottom: 10px;
+    width: 90%;
+    position: relative;
+    user-select: none;
+}
+.mockups img{
+    width: 100%;
+    /* height: auto; */
+}
+
+.project-links a {
+    color: white;
+    text-align: right;
+    transform: translateZ(60px);
+    text-decoration: none;
+}
+
+.project-links a:hover{
+    color: var(--skills);
+}
+
+.project-details, .project-links {
+    color: white;
+    text-align: justify;
+    transform: translateZ(40px);
+    padding: 15px 35px;
+}
+
+.project-details ul li{
+    text-align: justify;
+}
+
+#projects .section-main-display:hover .project-details {
+    text-shadow: 5px 5px 10px black;
+}
+#projects .section-main-display:hover .project-links {
+    text-shadow: 5px 5px 10px black;
+}
+
+#projects .section-main-display h1 {
+    color: white;
+    transform: translateZ(20px);
+    border-bottom: 2px solid white;
+}
+
+
+#projects .name {
+    color: white;
+    margin: 0px 20px;
+    text-shadow: 0px 0px 30px var(--projects);
+}
+
+#projects .name:hover {
+    color: var(--projects);
+}
 
 

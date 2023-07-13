@@ -11,7 +11,7 @@
     
     <!-- navigation bar button -->
     <button id="nav-btn" class="nav-btns">
-        <i class="fa fa-bars" aria-hidden="true">Menu</i>
+        <i class="fa fa-bars" aria-hidden="true"></i>
     </button>
 
     <div id="navigation">
@@ -51,33 +51,69 @@
 
                 <!-- contact section-->
                 <div class="home-btns">
-                    <button>Contact me</button>
-                    <button>
-                        <a href="./assets/Rishikesh's Resume (3).pdf" download>Resume</a>
+                    <button id="get-in-touch" >Contact me</button>
+                    <button id="resume-download">
+                        <a href="./assets/Rishikesh's Resume (3).pdf" download>Resume <i class="fa fa-download" aria-hidden="true"></i></a>
                     </button>
-                    <button><a href="https://www.linkedin.com/in/rishikesh-b0278b167/" target="_blank">
-                        <i class="fa fa-linkedin-square"></i></a>
+                    <button id="linkedin"><a href="https://www.linkedin.com/in/rishikesh-b0278b167/" target="_blank">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                     </button>
-                    <button><a href="https://github.com/Risihikesh" target="_blank">
-                        <i class="fa fa-github-square"></i></a>
+                    <button id="github"><a href="https://github.com/Risihikesh" target="_blank">
+                        <i class="fa fa-github-square" aria-hidden="true"></i></a>
                     </button>
                 </div>
 
             </div>
 
 
-            <div>
+            <div class="person">
                 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                 <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_v9riyrep.json" 
-                background="#FFFFFF" speed="1" style="width: 300px; height: 300px" loop autoplay>
+                background="rgba(0, 0, 0, 0)" speed="1" style="width: 100%; height: 100%" loop autoplay>
             </lottie-player>
 
             </div>
         </section>
+
+
+        <section id="projects">
+            <div class="section-main-display" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+                <h1> IMDB CLONE</h1>
+                <div class="mockups">
+                    <img src="./assets/imdb-min.png" alt="Imdb image">
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/Risihikesh/ImdbClone" target="_blank">
+                        <i class="fa fa-github" aria-hidden=""></i></a>
+                    <a href="https://imd-bclone.netlify.app/" target="_blank">
+                        <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                </div>
+                <div class="project-details">
+                    I have created a complete front-end-based website aiming to replicate the IMDb website. 
+                    The website utilizes the TMDB API, which grants access to a vast database of movies along with their details.
+                    The project consists of three main pages, each serving a specific purpose.
+                    <ul>
+                        <li>
+                            The home page serves as the landing page of the website.
+                        </li>
+                        <li>The movie details page provides in-depth information about a selected movie.
+                        </li>
+                        <li> User can add movies to their favourite list.
+                            Those movies will be displayed here.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="name">Project</div>
+        </section>
+
+
     </div>
 
 
-    <!-- <script src="./particles/particles.js"></script>
-    <script src="./particles/app.js"></script> -->
+    <script src="./scripts.js"></script>
+    <script src="./particles/particles.js"></script>
+    <script src="./particles/app.js"></script>
 </body>
 </html>
